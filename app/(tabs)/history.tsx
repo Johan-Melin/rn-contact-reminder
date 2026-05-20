@@ -1,6 +1,6 @@
 import { Text, View } from "react-native";
 
-export default function RemindersScreen() {
+export default function HistoryScreen() {
   return (
     <View
       style={{
@@ -9,7 +9,7 @@ export default function RemindersScreen() {
         justifyContent: "center",
       }}
     >
-      <Text>Reminders</Text>
+      <Text>History</Text>
     </View>
   );
 }

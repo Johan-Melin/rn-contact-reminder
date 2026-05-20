@@ -1,4 +1,4 @@
-import Ionicons from "@expo/vector-icons/Ionicons";
+import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import { Tabs } from "expo-router";
 
 export default function AppTabs() {
@@ -7,18 +7,27 @@ export default function AppTabs() {
       <Tabs.Screen
         name="index"
         options={{
-          title: "Home",
+          title: "Reminders",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons color={color} name="home" size={size} />
+            <MaterialCommunityIcons color={color} name="bell-outline" size={size} />
           ),
         }}
       />
       <Tabs.Screen
-        name="settings"
+        name="contacts"
         options={{
-          title: "Settings",
+          title: "Contacts",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons color={color} name="settings" size={size} />
+            <MaterialCommunityIcons color={color} name="card-account-details-outline" size={size} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="history"
+        options={{
+          title: "History",
+          tabBarIcon: ({ color, size }) => (
+            <MaterialCommunityIcons color={color} name="history" size={size} />
           ),
         }}
       />

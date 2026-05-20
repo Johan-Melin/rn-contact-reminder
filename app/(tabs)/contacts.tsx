@@ -1,6 +1,6 @@
 import { Text, View } from "react-native";
 
-export default function SettingsScreen() {
+export default function ContactsScreen() {
   return (
     <View
       style={{
@@ -9,7 +9,7 @@ export default function SettingsScreen() {
         justifyContent: "center",
       }}
     >
-      <Text>Settings</Text>
+      <Text>Contacts</Text>
     </View>
   );
 }
